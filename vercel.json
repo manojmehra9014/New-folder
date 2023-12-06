@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name":"sunshinelaboursolution",
-    "build":[{"src":"/app.js" , "use":"@vercel/node"}],
-    "routes":[{"src":"/(.*)" ,"dest":"/app.js"}]
+    "name":"final-year-project-3.0",
+    "build":[{"src":"app.js" , "use":"@vercel/node"}],
+    "routes":[{"src":"/(.*)" ,"dest":"app.js"}]
 }
