@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const path = require("path");
 const static_path = path.join(__dirname, "/");
-app.use(express.static('./public'));
+app.use(express.static('public'));
 
 // Set up routes
 app.get('/', (req, res) => {
