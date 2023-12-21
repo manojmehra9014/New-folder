@@ -2,12 +2,15 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const path = require("path");
-const static_path = path.join(__dirname, "/");
-app.use(express.static('public'));
+
+// Set the static path to the directory containing your static files
+const static_path = path.join(__dirname, "public");
+
+app.use(express.static(static_path));
 
 // Set up routes
 app.get('/', (req, res) => {
-    const filePath = path.join(static_path, '/main/index.html');
+    const filePath = path.join(static_path, 'main', 'index.html');
     res.sendFile(filePath, (err) => {
       if (err) {
         console.log(err);
@@ -17,7 +20,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-    const filePath = path.join(static_path, '/component/about.html');
+    const filePath = path.join(static_path, 'component', 'about.html');
     res.sendFile(filePath, (err) => {
       if (err) {
         console.log(err);
@@ -27,7 +30,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-    const filePath = path.join(static_path, '/component/contact.html');
+    const filePath = path.join(static_path, 'component', 'contact.html');
     res.sendFile(filePath, (err) => {
       if (err) {
         console.log(err);
