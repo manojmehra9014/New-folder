@@ -144,7 +144,10 @@ i {
     letter-spacing: 0.2rem;
     font-weight: 600;
   }
-
+#about_comment{
+  font-size: 18px;
+    font-weight: 600;
+}
 
 
 @media (max-width: 700px) {

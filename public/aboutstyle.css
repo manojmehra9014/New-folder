@@ -665,6 +665,15 @@ nav .grid > [class*=column-] {
 main {
   padding: 2rem 0;
 }
+#main1{
+  font-weight: 400;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+.para1{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
 
 .grid > [class*=column-] {
   padding: 1rem;
