@@ -1,6 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans');
+
 :root {
   --accent-color: crimson;
   --main-transition: all 0.3s ease-in-out;
@@ -39,7 +40,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px ;
+  padding: 30px;
   transition: var(--main-transition);
 }
 
@@ -105,187 +106,208 @@ body {
 i {
   margin: 0 10px;
 }
+
 .hero {
-    background-image: url("https://images.unsplash.com/photo-1530639834082-05bafb67fbbe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    min-height: 100vh;
-    text-transform: uppercase;
-    display: flex;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    margin-bottom: 20px;
-    z-index: -2;
-  }
-  
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  
-  .hero h1 {
-    font-size: 46px;
-    margin: -20px 0 20px;
-    font-weight: 800;
-    letter-spacing: 0.8rem;
-  }
-  
-  #para {
-    font-size: 16px;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-  }
-#about_comment{
+  background-image: url("https://images.unsplash.com/photo-1530639834082-05bafb67fbbe?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  text-transform: uppercase;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin: -20px 0 20px;
+  font-weight: 800;
+  letter-spacing: 0.8rem;
+}
+
+#para {
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+}
+
+#about_comment {
   font-size: 18px;
-    font-weight: 600;
+  font-weight: 600;
 }
 
 
 @media (max-width: 700px) {
   .nav .logo {
     display: none;
-  }  
- 
-  .images{
+  }
+
+  .images {
     display: flex;
     flex-direction: column;
   }
 }
+
 @media (max-width: 465px) {
-    .nav a{
-        font-size: 0.8rem;
-    }
-    .hero h1{
-        margin: 10px;
-        font-size: 2rem;
-    }
-    .text{
-      display: none;
-    }
-    .hero p{
-        font-size: 0.8rem;
-    }
-  }
-  @media only screen and (max-width: 400px) {
-    .nav a{
-        font-size: 0.6rem;
-    }
-
-  }
- @media only screen and (max-width: 350px) {
-    .nav a{
-        font-size: 0.5rem;
-    }
-    
-  } */
-section {
-    padding: 60px 0;
-    min-height: 100vh;
-  }
-  a,
-  a:hover,
-  a:focus,
-  a:active {
-    text-decoration: none;
-    outline: none;
-  }
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .bg-gray {
-    background-color: #f9f9f9;
-  }
-  
-  .site-heading h2 {
-    display: block;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  
-  .site-heading h2 span {
-    color: #00a01d;
-  }
-  
-  .site-heading h4 {
-    display: inline-block;
-    padding-bottom: 20px;
-    position: relative;
-    text-transform: capitalize;
-    z-index: 1;
-  }
-  
-  .site-heading h4::before {
-    background: #00a01d none repeat scroll 0 0;
-    bottom: 0;
-    content: "";
-    height: 2px;
-    left: 50%;
-    margin-left: -25px;
-    position: absolute;
-    width: 50px;
-  }
-  
-  .site-heading {
-    margin-bottom: 60px;
-    overflow: hidden;
-    margin-top: -5px;
-  }
-  
-  .carousel-shadow .owl-stage-outer {
-    margin: -15px -15px 0;
-    padding: 15px;
+  .nav a {
+    font-size: 0.8rem;
   }
 
-  ul {
-    margin: 0px;
-    padding: 0px;
+  .hero h1 {
+    margin: 10px;
+    font-size: 2rem;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+  }
 }
+
+@media only screen and (max-width: 400px) {
+  .nav a {
+    font-size: 0.6rem;
+  }
+
+}
+
+@media only screen and (max-width: 350px) {
+  .nav a {
+    font-size: 0.5rem;
+  }
+
+}
+
+*/ section {
+  padding: 60px 0;
+  min-height: 100vh;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bg-gray {
+  background-color: #f9f9f9;
+}
+
+.site-heading h2 {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.site-heading h2 span {
+  color: #00a01d;
+}
+
+.site-heading h4 {
+  display: inline-block;
+  padding-bottom: 20px;
+  position: relative;
+  text-transform: capitalize;
+  z-index: 1;
+}
+
+.site-heading h4::before {
+  background: #00a01d none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -25px;
+  position: absolute;
+  width: 50px;
+}
+
+.site-heading {
+  margin-bottom: 60px;
+  overflow: hidden;
+  margin-top: -5px;
+}
+
+.carousel-shadow .owl-stage-outer {
+  margin: -15px -15px 0;
+  padding: 15px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
 .footer-section {
   background: #151414;
   position: relative;
 }
+
 .footer-cta {
   border-bottom: 1px solid #373636;
 }
-.single-cta{
-    padding: 10px 0;
+
+.single-cta {
+  padding: 10px 0;
 }
+
 .single-cta i {
   color: #ff5e14;
   font-size: 30px;
   float: left;
   margin-top: 8px;
 }
+
 .cta-text {
   padding-left: 15px;
   display: inline-block;
 }
+
 .cta-text h4 {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 2px;
 }
+
 .cta-text span {
   color: #757575;
   font-size: 15px;
 }
+
 .footer-content {
   position: relative;
   z-index: 2;
 }
+
 .footer-pattern img {
   position: absolute;
   top: 0;
@@ -294,18 +316,22 @@ section {
   background-size: cover;
   background-position: 100% 100%;
 }
+
 .footer-logo {
   margin-bottom: 30px;
 }
+
 .footer-logo img {
-    max-width: 200px;
+  max-width: 200px;
 }
+
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-      color: #7e7e7e;
+  color: #7e7e7e;
   line-height: 28px;
 }
+
 .footer-social-icon span {
   color: #fff;
   display: block;
@@ -314,11 +340,13 @@ section {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 20px;
 }
+
 .footer-social-icon a {
   color: #fff;
   font-size: 16px;
   margin-right: 15px;
 }
+
 .footer-social-icon i {
   height: 40px;
   width: 40px;
@@ -326,15 +354,19 @@ section {
   line-height: 38px;
   border-radius: 50%;
 }
-.facebook-bg{
+
+.facebook-bg {
   background: #3B5998;
 }
-.twitter-bg{
+
+.twitter-bg {
   background: #55ACEE;
 }
-.google-bg{
+
+.google-bg {
   background: #DD4B39;
 }
+
 .footer-widget-heading h3 {
   color: #fff;
   font-size: 20px;
@@ -342,6 +374,7 @@ section {
   margin-bottom: 40px;
   position: relative;
 }
+
 .footer-widget-heading h3::before {
   content: "";
   position: absolute;
@@ -351,22 +384,27 @@ section {
   width: 50px;
   background: #ff5e14;
 }
+
 .footer-widget ul li {
   display: inline-block;
   width: 50%;
   margin-bottom: 12px;
 }
-.footer-widget ul li a:hover{
+
+.footer-widget ul li a:hover {
   color: #ff5e14;
 }
+
 .footer-widget ul li a {
   color: #878787;
   text-transform: capitalize;
 }
+
 .subscribe-form {
   position: relative;
   overflow: hidden;
 }
+
 .subscribe-form input {
   width: 100%;
   padding: 14px 28px;
@@ -374,38 +412,46 @@ section {
   border: 1px solid #2E2E2E;
   color: #fff;
 }
+
 .subscribe-form button {
-    position: absolute;
-    right: 0;
-    background: #ff5e14;
-    padding: 13px 20px;
-    border: 1px solid #ff5e14;
-    top: 0;
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
 }
+
 .subscribe-form button i {
   color: #fff;
   font-size: 22px;
   transform: rotate(-6deg);
 }
-.copyright-area{
+
+.copyright-area {
   background: #202020;
   padding: 25px 0;
 }
+
 .copyright-text p {
   margin: 0;
   font-size: 14px;
   color: #878787;
 }
-.copyright-text p a{
+
+.copyright-text p a {
   color: #ff5e14;
 }
+
 .footer-menu li {
   display: inline-block;
   margin-left: 20px;
 }
-.footer-menu li:hover a{
+
+.footer-menu li:hover a {
   color: #ff5e14;
 }
+
 .footer-menu li a {
   font-size: 14px;
   color: #878787;
@@ -413,40 +459,48 @@ section {
 
 
 .facebook-bg {
-    border-radius: 50%;
-    padding: 15px 0;
-    background-color: #1877f2; /* Facebook blue color */
-    color: #fff; /* Text color */
+  border-radius: 50%;
+  padding: 15px 0;
+  background-color: #1877f2;
+  /* Facebook blue color */
+  color: #fff;
+  /* Text color */
 }
 
-.whatsapp-bg {border-radius: 50%;
-    padding: 15px 0;
-    background-color: #25d366; /* WhatsApp green color */
-    color: #fff;
+.whatsapp-bg {
+  border-radius: 50%;
+  padding: 15px 0;
+  background-color: #25d366;
+  /* WhatsApp green color */
+  color: #fff;
 }
 
-.email-bg {border-radius: 50%;
-    padding: 15px 0;
-    background-color: #ff5722; /* Email orange color */
-    color: #fff;
+.email-bg {
+  border-radius: 50%;
+  padding: 15px 0;
+  background-color: #ff5722;
+  /* Email orange color */
+  color: #fff;
 }
 
-.instagram-bg {border-radius: 50%;
-    padding: 15px 0;
-    background-color: #e4405f; /* Instagram pink color */
-    color: #fff;
+.instagram-bg {
+  border-radius: 50%;
+  padding: 15px 0;
+  background-color: #e4405f;
+  /* Instagram pink color */
+  color: #fff;
 }
 
-.hero-3{
-    padding: 40px;
-    background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
-    color: #0e3481;
-    min-height: 50vh;
+.hero-3 {
+  padding: 40px;
+  background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
+  color: #0e3481;
+  min-height: 50vh;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&display=swap");
 
-.hero-3{
+.hero-3 {
   background-image: linear-gradient(#e8f0ff 0%, white 52.08%);
   color: #0e3481;
   justify-content: center;
@@ -490,6 +544,7 @@ section {
   background: #fff;
   color: #151e3f;
   transition: all 0.9s ease;
+
   p {
     transition: all 0.9s ease;
     transform: scale(0.1);
@@ -505,7 +560,9 @@ p {
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans');
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
@@ -623,7 +680,7 @@ h3 {
   font-size: 0.6rem;
 }
 
-.service > * {
+.service>* {
   flex: 1 1 100%;
 }
 
